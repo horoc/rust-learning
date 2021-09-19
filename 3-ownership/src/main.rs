@@ -90,6 +90,9 @@ fn cal_string_len(cal_s: String) -> (String, usize) {
 }
 
 fn cal_string_len_ref(cal_s: &String) -> usize {
+    // https://rust-book.junmajinlong.com/ch6/04_understand_mutable_ref.html
+    // 可变引用与不可变引用的一篇好文
+    
     // 引用默认不可变，但是如果需要可变，需要定义时为 &mut String
     // 1.但是可变引用有一个重要的特性，一个区域内可变引用不能超过1个
     // 2.对一个区域中，不可以对同一个变量同时存在可变引用和不可变引用
